@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC:100,300,regular,500,700,900" rel="stylesheet" />
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        .container {
+            width: 100vw;
+            height: 100vh;
+            background-color: black;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .wrapper {
+            width: 100%;
+            font-family: 'Noto Sans TC', sans-serif;
+            display: flex;
+        }
+
+        .card {
+            position: relative;
+            width: 25%;
+        }
+
+        .card img {
+            width: 100%;
+            vertical-align: middle;
+        }
+
+        .card:hover .text {
+            opacity: 1;
+        }
+
+        .text {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, .6);
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            opacity: 0;
+            transition: .5s, .5s;
+        }
+
+        .text h2::after {
+            display: block;
+            content: '';
+            background-color: yellow;
+            height: 2px;
+            width: 0%;
+            transition: width .5s, .5s;
+        }
+
+        .card:hover .text h2::after {
+            width: 100%;
+        }
+
+        .text h2 {
+            font-size: 28px;
+            color: #ff0;
+            font-weight: 500;
+        }
+
+        .text p {
+            font-size: 18px;
+            color: #fff;
+            font-weight: 100;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="wrapper">
+            <div class="card">
+                <img src="https://picsum.photos/id/684/400/400" alt="">
+                <div class="text">
+                    <h2>金魚都能懂的這個網頁畫面怎麼切 : 互動圖文卡片</h2>
+                    <p>互動圖文卡片是我們在網頁中經常見到的另一種稀飯版，不會切你就遜掉囉。</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://picsum.photos/id/684/400/400" alt="">
+                <div class="text">
+                    <h2>金魚都能懂的這個網頁畫面怎麼切 : 互動圖文卡片</h2>
+                    <p>
+                        互動圖文卡片是我們在網頁中經常見到的另一種稀飯版，不會切你就遜掉囉。
+                    </p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://picsum.photos/id/684/400/400" alt="">
+                <div class="text">
+                    <h2>金魚都能懂的這個網頁畫面怎麼切 : 互動圖文卡片</h2>
+                    <p>
+                        互動圖文卡片是我們在網頁中經常見到的另一種稀飯版，不會切你就遜掉囉。
+                    </p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://picsum.photos/id/684/400/400" alt="">
+                <div class="text">
+                    <h2>金魚都能懂的這個網頁畫面怎麼切 : 互動圖文卡片</h2>
+                    <p>
+                        互動圖文卡片是我們在網頁中經常見到的另一種稀飯版，不會切你就遜掉囉。
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
