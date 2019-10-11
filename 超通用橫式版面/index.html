@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC:100,300,regular,500,700,900" rel="stylesheet" />
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .wrap {
+            height: 100vh;
+            width: 100vw;
+            background: linear-gradient(-30deg,#fdaecb,#e7597f,#fe8556);
+            display: flex;
+            align-items: center;
+        }
+
+        .wrap .container {
+            width: 1200px;
+            margin: auto;
+            display: flex;
+        }
+
+        .wrap .container .item {
+            width: 368px;
+            margin: 15px;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            display: flex;
+        }
+
+        .wrap .container .item .pic {
+            width: 50%;
+        }
+
+        .wrap .container .item .pic img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .wrap .container .item .txt {
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            padding: 15px;
+            box-sizing: border-box;
+
+            font-family: 'Noto Sans TC',sans-serif;
+        }
+
+        .wrap .container .item .txt h2 {
+            font-weight: 500;
+            margin-bottom: 10px;
+        }
+
+        .wrap .container .item .txt p {
+            font-weight: 100;
+        }
+
+        .wrap .container .item .txt a {
+            text-decoration: none;
+            border: 1px solid #ccc;
+            align-self: flex-end;
+            border-radius: 200px;
+            padding: 0 10px;
+            color: rgb(167, 167, 167);
+            vertical-align: middle;
+        }
+
+        .wrap .container .item .txt a:hover {
+            background-color: #ccc;
+            color: #fff;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <div class="container">
+            <div class="item">
+                <div class="pic">
+                    <img src="https://picsum.photos/400/400/?random=1" />
+                </div>
+                <div class="txt">
+                    <h2>金魚都能懂的網頁入門</h2>
+                    <p>年度最佳網頁入門教學影片，輕鬆學會網頁製作，原始碼原來如此有趣啊。</p>
+                    <a href="">more</a>
+                </div>
+            </div>
+            <div class="item">
+                <div class="pic">
+                    <img src="https://picsum.photos/400/400/?random=2" />
+                </div>
+                <div class="txt">
+                    <h2>金魚都能懂的網頁切版</h2>
+                    <p>沒想到切版竟然如此簡單，以往的困難迎刃而解，技巧原來這般單純。</p>
+                    <a href="">more</a>
+                </div>
+            </div>
+            <div class="item">
+                <div class="pic">
+                    <img src="https://picsum.photos/400/400/?random=3" />
+                </div>
+                <div class="txt">
+                    <h2>金魚都能懂的CSS選取器</h2>
+                    <p>CSS選取器原來是這道理啊，其實之前都誤解她了，對不起 9523 !</p>
+                    <a href="">more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
