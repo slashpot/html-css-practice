@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC:100,300,regular,500,700,900" rel="stylesheet" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <style>
+        body {
+            background-color: black;
+        }
+
+        * {
+            padding: 0;
+            margin: 0;
+            font-family: "Noto Sans Tc";
+        }
+
+        footer {
+            width: 100vw;
+            background: #ccc;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            background: linear-gradient(-20deg, #3f5494, #08c7a5);
+        }
+
+        .footer-main {
+            width: 1200px;
+            padding: 150px 0;
+            margin: auto;
+            display: flex;
+        }
+
+        .footer-item {
+            display: flex;
+            flex-direction: column;
+
+            width: 0;
+            flex-grow: 1;
+
+            margin: 0 20px;
+        }
+
+        .footer-item h4 {
+            font-size: 24px;
+            color: #fff;
+
+            padding-bottom: 12px;
+            border-bottom: 1px dotted white;
+            margin-bottom: 12px;
+        }
+
+        .footer-item a {
+            padding: 5px 0;
+            line-height: 1.4;
+            text-decoration: none;
+            color: white;
+        }
+
+        .footer-sub {
+            display: flex;
+            align-items: center;
+            height: 100%;
+        }
+
+        .footer-sub form {
+            width: 100%;
+            display: flex;
+        }
+
+        .footer-sub input {
+            border: 0;
+        }
+
+        .footer-sub input[type="text"] {
+            flex-grow: 1;
+        }
+
+        .footer-sub input[type="submit"] {
+            border: 0;
+            padding: 5px 10px;
+            background-color: #3E5293;
+            color: #70F6DF;
+        }
+
+        .copyright {
+            width: 100%;
+            text-align: center;
+            padding: 10px 0;
+            background-color: #3E5293;
+            color: #70F6DF;
+        }
+    </style>
+</head>
+
+<body>
+    <footer>
+        <div class="footer-main">
+            <div class="footer-item">
+                <h4>關於暴力課程</h4>
+                <a href=""><i class="fa fa-angle-right"></i> 課程目標</a>
+                <a href=""><i class="fa fa-angle-right"></i> 辦學理念</a>
+                <a href=""><i class="fa fa-angle-right"></i> 課程宗旨</a>
+            </div>
+            <div class="footer-item">
+                <h4>課程列表</h4>
+                <a href=""><i class="fa fa-angle-right"></i> 暴力網頁入門班</a>
+                <a href=""><i class="fa fa-angle-right"></i> RWD網頁深入理解</a>
+                <a href=""><i class="fa fa-angle-right"></i> CSS3互動動畫設計</a>
+                <a href=""><i class="fa fa-angle-right"></i> Bootstrap框架實務</a>
+            </div>
+            <div class="footer-item">
+                <h4>服務項目</h4>
+                <a href=""><i class="fa fa-angle-right"></i> 網站建置顧問</a>
+                <a href=""><i class="fa fa-angle-right"></i> 網站設計建置</a>
+                <a href=""><i class="fa fa-angle-right"></i> 網站規劃</a>
+                <a href=""><i class="fa fa-angle-right"></i> 企業教育訓練</a>
+            </div>
+            <div class="footer-item">
+                <h4>訂閱電子報</h4>
+                <div class="footer-sub">
+                    <form action="">
+                        <input type="text" />
+                        <input type="submit" value="訂閱" name="訂閱">
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            Copyright © 2019 金魚都能懂得這個網頁畫面怎麼切
+        </div>
+    </footer>
+</body>
+
+</html>
