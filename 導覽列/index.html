@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC:100,300,regular,500,700,900" rel="stylesheet" />
+    <style>
+        @import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css");
+
+        * {
+            padding: 0;
+            margin: 0;
+            list-style: none;
+            font-family: 'Noto Sans TC';
+        }
+
+        .main-header {
+            width: 100vw;
+            background: linear-gradient(0deg, #fe70d8, #3713c1);
+        }
+
+        .main-header .container {
+            display: flex;
+            align-items: center;
+
+            max-width: 1200px;
+            padding: 20px;
+            margin: auto;
+        }
+
+        .main-header .logo {
+            width: 100px;
+        }
+
+        .main-header .logo img {
+            width: 100%;
+            vertical-align: middle;
+        }
+
+        .main-header .main-nav {
+            margin: auto;
+            display: flex;
+        }
+
+        .main-header .main-nav a {
+            padding: 5px 1em;
+            text-decoration: none;
+            color: #fff;
+            position: relative;
+
+            transition: .5s;
+        }
+
+        .main-header .main-nav a:hover {
+            transform: translateY(-10px);
+        }
+
+        .main-header .main-nav a::after {
+            content: '';
+            position: absolute;
+            left: 50%;
+            right: 50%;
+            bottom: -5px;
+            border-bottom: 1px solid white;
+            transition: .3s;
+        }
+        .main-header .main-nav a:hover::after {
+            left: 1em;
+            right: 1em;
+        }
+
+        .main-header .search {
+            display: flex;
+        }
+
+        .main-header .search input,
+        .main-header .search button {
+            padding: 5px 10px;
+            border: none;
+        }
+
+        .main-header .search input:focus,
+        .main-header .search button:focus {
+            outline: none;
+        }
+
+        .main-header .search input {
+            border-radius: 200px 0 0 200px;
+        }
+
+        .main-header .search button {
+            background-color: #fff;
+            border-radius: 0 200px 200px 0;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="main-header">
+        <div class="container">
+            <div class="logo"><img src="./logo.png" alt=""></div>
+            <nav class="main-nav">
+                <a href="#">金魚都能懂系列</a>
+                <a href="#">暴力網頁入門系列</a>
+                <a href="#">CSS可樂系列</a>
+                <a href="#">RWD原來醬子系列</a>
+            </nav>
+            <form class="search">
+                <input type="text" name="" id="">
+                <button><i class="fa fa-search"></i></button>
+            </form>
+        </div>
+    </header>
+</body>
+
+</html>
