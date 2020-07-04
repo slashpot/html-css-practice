@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url("https://fonts.googleapis.com/css?family=Noto+Sans+TC:100,300,400,500,700,900&display=swap");
+
+        * {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            font-family: 'Noto Sans TC', sans-serif;
+        }
+
+        body {
+            background-color: #000;
+        }
+
+        .wrap {
+            width: 100%;
+            overflow: hidden;
+        }
+
+        .block {
+            float: left;
+            position: relative;
+        }
+
+        .block img {
+            width: 100%;
+            height: 100%;
+            vertical-align: middle;
+        }
+
+        .block .text {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            padding: 15px;
+            text-align: center;
+            color: white;
+            background-color: rgba(0, 0, 0, .6);
+            box-sizing: border-box;
+            opacity: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            transition: .5s;
+            transform: scale(0);
+        }
+
+        .block:hover .text {
+            opacity: 1;
+            transform: scale(1);
+        }
+
+        .block:first-child {
+            width: 50%;
+        }
+
+        .block:first-child~.block {
+            width: 25%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="block">
+            <img src="https://picsum.photos/500/500/?random=10">
+            <div class="text">
+                <h3>金魚都懂切版</h3>
+                <p>金魚都懂的這個網頁怎麼切，是 IThome 鐵人賽的主題，主要訴求在簡單快速將一個網頁畫面完成，但也由於時間有限，所以沒有處理RWD部分，留給廣大網友腦補囉。</p>
+            </div>
+        </div>
+        <div class="block">
+            <img src="https://picsum.photos/500/500/?random=11">
+            <div class="text">
+                <h3>金魚也懂CSS</h3>
+                <p>金魚都能懂的 CSS 選取器，是 IThome 鐵人賽的主題之一，內容原理與實務並重，看完考試不會考一百分，但是可以學到很多。</p>
+            </div>
+        </div>
+        <div class="block">
+            <img src="https://picsum.photos/500/500/?random=12">
+            <div class="text">
+                <h3>金魚還會HTML</h3>
+                <p>金魚都能懂的網頁設計入門，是針對新手入門規劃的一個完整的入門課，雖免費但專業度卻絲毫未減，適合大人小孩一起服用。</p>
+            </div>
+        </div>
+        <div class="block">
+            <img src="https://picsum.photos/500/500/?random=13">
+            <div class="text">
+                <h3>阿你會甚麼?</h3>
+                <p>這是個問句，你會甚麼? 這很重要，因為你可能是程式奇才而不適合切版阿</p>
+            </div>
+        </div>
+        <div class="block">
+            <img src="https://picsum.photos/500/500/?random=14">
+            <div class="text">
+                <h3>對不起我又嗆人了</h3>
+                <p>如果你覺得我嗆，那你一定沒有在看 CSScoke 的直播，趁現在趕快去定閱一波阿!</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
